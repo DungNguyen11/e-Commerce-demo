@@ -1,0 +1,417 @@
+{
+  "users": [],
+  "products": [
+    {
+      "id": 1,
+      "name": "EAUX RIHLA EAUX DE PARFUM",
+      "price": 215,
+      "isBestSeller": false,
+      "image": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/e/d/edp-eau-rihal-75ml_face.jpg",
+      "image1": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/e/d/edp-eau-rihal-75ml_3quart.jpg",
+      "image2": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/e/d/edp-eau-rihla-coffret-packshot.jpg",
+      "image3": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/p/h/photo_26_diptyque_1202v2.jpg",
+      "image4": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/p/h/photo_31_diptyque_1526v2-bis.jpg",
+      "categoryId": 4,
+      "sizeId": 1,
+      "description": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>A leather note was specially developed for diptyque to enhance the composition of eaux Rihla. This natural ingredient with a leathery scent was obtained from Chinese cedar wood. It is a “vegetal” leather with an evocative fragrance.</span></p>",
+      "content": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>eaux Rihla is inspired by journeys along the routes of the Middle East, which have nourished diptyque's imagination since the origins of the Maison. Conceived as the chronicle of a long journey, the perfume features a leather that changes throughoutits composition. At first, the spicy liveliness of pink peppercorn and the woody notes of Atlas cedar create a vibrant accord.</span></p>",
+      "material": "Leather, Iris, Cedar heart"
+    },
+    {
+      "id": 12,
+      "name": "OLENE EAUX DE TOILETTE",
+      "price": 112,
+      "isBestSeller": false,
+      "image": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/o/l/olene_face_olene100v1_1439x1200.png",
+      "image2": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/o/l/olene_back_olene100v1_1439x1200.png",
+      "image3": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/o/l/olene_three_quarter_olene100v1_1439x1200_1.png",
+      "image4": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/o/l/olene_three_quarter_olene100v1_1439x1200_1.png",
+      "categoryId": 2,
+      "sizeId": 1,
+      "description": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>The illustration for Olene depicts Flora, a powerful Roman goddess. Endowed with great beauty, she is the goddess of flowers, springtime and fertility.&nbsp;</span></p>",
+      "content": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>Olene tells the story of Venetian gardens. In the evening, under the pergolas, the sweet fragrance of wisteria and jasmine or sometimes honeysuckle, just as delicate. Cross bridges to lose yourself, and then stroll through the narrow streets to perceivethe thousand and one scents of the flowers.</span></p>",
+      "material": "Wisteria, Honeysuckle, Jasmine"
+    },
+    {
+      "id": 3,
+      "name": "PHILOSYKOS EAUX DE PARFUM ",
+      "price": 150,
+      "isBestSeller": true,
+      "image": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/p/h/philosykos_face_philop75_1439x1200_1.png",
+      "image2": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/p/h/philosykos_back_philop75_1439x1200_1.png",
+      "image3": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/p/h/philosykos_three_quarter_philop75_1439x1200_1.png",
+      "image4": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/e/d/edp_coffret_philosykos_1439x1200px_1.jpg",
+      "categoryId": 1,
+      "sizeId": 1,
+      "description": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>“Philosykos” means “friend of the fig tree” in Greek. A tree whose leaves and a few branches brought back in a memory box was the source of inspiration.&nbsp;</span></p>",
+      "content": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>The memory of a Greek summer at Mount Pelion where, to get to the sea, there was a natural grove of wild sun-soaked fig trees to cross through. Philosykos is an ode to the entire fig tree: the green freshness of the leaves, the milky flavour of thefigs, underpinned by the woody density of the tree.</span></p>",
+      "material": "Fig leaves, Fig tree sap, Fig tree wood"
+    },
+    {
+      "id": 4,
+      "name": "TAM DAO EAUX DE PARFUM ",
+      "price": 140,
+      "isBestSeller": true,
+      "image": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/t/a/tam-dao_face_tamdaop75_1439x1200_1.png",
+      "image2": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/t/a/tam-dao_back_tamdaop75_1439x1200_1.png",
+      "image3": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/t/a/tam-dao_three_quarter_tamdaop75_1439x1200_1.png",
+      "image4": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/e/d/edp_coffret_tamdao_1439x1200px_1.jpg",
+      "categoryId": 1,
+      "sizeId": 2,
+      "description": "<p><span style='font-family: HCo Gotham, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>In the eaux de parfum, the Asian spices highlight the wood and its creamy nuances, anchoring Tam Dao more solidly in its region of origin.</span></p>",
+      "content": "<span style='font-family: HCo Gotham, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>A memory from the holy forests of Indochina, and the velvety, milky scent of sandalwood burned in temples. Yves Coueslant, one of diptyque’s founders, has never forgotten this fragrance from his childhood illustrated by stately sandalwood from Mysore.</span>",
+      "material": "Sandalwood, Cedar, Cypress, Coriander"
+    },
+    {
+      "id": 5,
+      "name": "ORPHÉON EAUX DE PARFUM",
+      "price": 145,
+      "isBestSeller": false,
+      "image": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/o/r/orpheon_face.png",
+      "image2": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/o/r/orpheon_dos.png",
+      "image3": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/o/r/orpheon_3quart.png",
+      "image4": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/o/r/orpheon_coffret_edp_ret.png",
+      "categoryId": 1,
+      "sizeId": 2,
+      "description": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>Today, all that remains of Orphéon is a faceted blue column in the back of the boutique at 34 boulevard Saint-Germain.</span></p>",
+      "content": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>Orphéon was one of the bars, filled with joyful effervescence, where the three founders of the nearby diptyque boutique liked to meet. Today, paying tribute to this era and to creative friendships, the bar is immortalised in the olfactory portraitthat bears its name: Orphéon. Freeze frame: curls of tobacco smoke mingle with powdery trails of blusher, lingering on burnished wood.</span></p>",
+      "material": "Juniper berry, Cedar, Tonka bean, Jasmine"
+    },
+    {
+      "id": 11,
+      "name": "KYOTO EAUX DE TOILETTE ",
+      "price": 160,
+      "isBestSeller": false,
+      "image": "http://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/m/o/montage_kyoto-edt_rvb.png",
+      "image2": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/k/y/kyoto-edt-34.jpg",
+      "image3": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/k/y/kyoto-edt-dos.jpg",
+      "image4": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/k/y/kyoto-edt-pack.jpg",
+      "categoryId": 2,
+      "sizeId": 2,
+      "description": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>A woody floral creation with the refined grace of an ikebana arrangement of roses and branches.</span></p>",
+      "content": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>The Japanese aesthetic has often inspired the Maison with its refinement and poetry. For this eaux de toilette, the focus is on ikebana, an art that describes 'the way of flowers' and that shapes nature according to ancestral codes. The first schoolof ikebana was founded in Kyoto in the 15th century.&nbsp;</span></p>",
+      "material": "Incense, Turkish rose, Vetiver, Beetroot accord"
+    },
+    {
+      "id": 2,
+      "name": "FLEUR DE EAUX DE PARFUM ",
+      "price": 135,
+      "isBestSeller": true,
+      "image": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/f/l/fleur-de-peau-fifi.jpg",
+      "image2": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/f/l/fleur-de-peau_back_fleurp75c_1439x1200.png",
+      "image3": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/f/l/fleur-de-peau_three_quarter_fleurp75c_1439x1200.png",
+      "image4": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/e/d/edp_coffret_fleur-de-peau_1439x1200px_1.jpg",
+      "categoryId": 2,
+      "sizeId": 1,
+      "description": "<span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>Absolute ambrette seed extract comes from hibiscus flowers. Its notes are extraordinarily rich: sweet, slightly animal, fruity (like pear and plum).</span>",
+      "content": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>A tribute to the mythical love between Psyche and Eros, which led to the birth of their daughter, Hedone. One scent can convey this legend: musks. At the heart of Fleur de peaux, they are cottony, soft or moist. Highlighted with iris and ambrette seed,they reveal their full tactile dimension</span></p>",
+      "material": "Musk, Iris, Ambrettolide, Pink peppercorns"
+    },
+    {
+      "id": 14,
+      "name": "EAUX ROSE EAUX DE TOILETTE",
+      "price": 155,
+      "isBestSeller": true,
+      "image": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/e/a/eau-de-rose_face_eaurose100v1_1439x1200_2.png",
+      "image2": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/e/a/eau-de-rose_back_eaurose100v1_1439x1200_2.png",
+      "image3": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/e/a/eau-de-rose_three_quarter_eaurose100v1_1439x1200.png",
+      "image4": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/d/i/diptyque_herbier_1400x1200_eaurose_edt.jpg",
+      "categoryId": 2,
+      "sizeId": 1,
+      "description": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>Why do certain roses have a stronger scent than others? The enzyme nudix&nbsp;hydrolase plays a role in synthesising the molecules that create the rose scent. This enzyme is expressed in a larger quantity in more heavily scented roses.&nbsp;</span></p>",
+      "content": "<span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>Pick up the petals of a rose, add its green leaves, its stem, and don’t forget its buds. Immerse in clear water and wait to reveal its rosy delicateness, fruity accents and acidulated green notes... eaux Rose is composed like an infusion of the finestdamascena and centifolia roses.</span>",
+      "material": "Rose damascena, Rose centifolia, Litchi accord, Ambroxan"
+    },
+    {
+      "id": 6,
+      "name": "EAUX DUELLE EAUX DE PARFUM",
+      "price": 135,
+      "isBestSeller": true,
+      "image": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/e/a/eau-duelle_face_duellep75_1439x1200_1.png",
+      "image2": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/e/a/eau-duelle_back_duellep75_1439x1200_1.png",
+      "image3": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/e/a/eau-duelle_three_quarter_duellep75_1439x1200_1.png",
+      "image4": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/e/d/edp_coffret_eau-duelle_1439x1200px_1.jpg",
+      "categoryId": 4,
+      "sizeId": 1,
+      "description": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>The vanilla bean is the fruit of the orchid flower. Harvested while still green, it must undergo a maturation process of thirty-four months: it is dried slowly so that all of its subtle, sweet perfume</span> </p>",
+      "content": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>An ode to travel and vanilla. Along the spice route, the vanilla at the heart of eaux Duelle takes on new aromas: luminous, addictive accents of calamus and dark, smoky nuances of cypriol. Travelling through time and over borders, Bourbon vanilla fromMadagascar reveals itself between darkness and light.</span></p>",
+      "material": "Vanilla, Pink peppercorn, Cypriol, Incense"
+    },
+    {
+      "id": 9,
+      "name": "VETYVERIO EAUX DE PARFUM",
+      "price": 120,
+      "isBestSeller": false,
+      "image": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/v/e/vetyverio_face_vetyp75_1439x1200_1.png",
+      "image2": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/v/e/vetyverio_back_vetyp75_1439x1200_1.png",
+      "image3": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/v/e/vetyverio_three_quarter_vetyp75_1439x1200_1.png",
+      "image4": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/e/d/edp_coffret_vetyverio_1439x1200px_1.jpg",
+      "categoryId": 1,
+      "sizeId": 2,
+      "description": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>The essence of vetiver from Haiti used in the Vetyverio eaux de parfum has ESR certification (fairly traded, sustainable and responsible). It is sourced from the villages of Massey, Faucault and Bazelais, Haiti.&nbsp;</span></p>",
+      "content": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>n Vetyverio, Haitian vetiver does not become totally feminine or masculine, it goes beyond. Like inlaid wood, vetiver reveals sometimes fresh facets, other times smoky or even subtly floral. There are a kaleidoscope of olfactory nuances in this singleraw material, magnified here in an unusual interpretation.</span></p>",
+      "material": "Vetiver from Java, Vetiver from Haiti, Grapefruit, Rose"
+    },
+    {
+      "id": 10,
+      "name": "DO SON EAUX DE PARFUM",
+      "price": 155,
+      "isBestSeller": false,
+      "image": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/d/o/doson_face_dosonp75_1439x1200_1.png",
+      "image2": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/d/o/doson_back_dosonp75_1439x1200_1.png",
+      "image3": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/d/o/doson_three_quarter_dosonp75_1439x1200_1.png",
+      "image4": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/e/d/edp_coffret_doson_1439x1200px_1.jpg",
+      "categoryId": 2,
+      "sizeId": 1,
+      "description": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>In the eaux de parfum, the tuberose is more enduring still. Its scent brings to mind the sundown hour, when the white flowers stand out in the darkness of the wooden pagoda</span></p>",
+      "content": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>As a child, Yves Coueslant, one of diptyque’s founders, spent his summers in Do Son, in Ha Long Bay. The sea breeze carried with it the heady, spicy scent of tuberoses. Do Son has the delicateness and persistence of a memory from a childhood in Indochina- a memory of flowers in all their sensual delight.</span></p>",
+      "material": "Tuberose, Orange blossom, Jasmine"
+    },
+    {
+      "id": 7,
+      "name": "L’OMBRE DANS L’EAUX EAUX DE PARFUM",
+      "price": 130,
+      "isBestSeller": false,
+      "image": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/l/o/lombre-dans-leau_face_ombrep75_1439x1200_1.png",
+      "image2": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/l/o/lombre-dans-leau_back_ombrep75_1439x1200_1.png",
+      "image3": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/l/o/lombre-dans-leau_three_quarter_ombrep75_1439x1200_1.png",
+      "image4": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/e/d/edp_coffret_ombre-dans-leau_1439x1200px_1.jpg",
+      "categoryId": 3,
+      "sizeId": 2,
+      "description": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>In the eaux de parfum, we find the fragrance of a rose in bloom, denser and more sensual.</span></p>",
+      "content": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>Telling the story of daydreams, a calm river, a summer slumber under a weeping willow... The combined scent of roses and blackcurrant berries in the palm of the hand: the herbaceous, acidulated accents of blackcurrant leaves and buds, and the floralintensity of rose. A nature-filled moment to savour.</span></p>",
+      "material": "Rose, Blackcurrant buds, Petitgrain, Blackcurrant leaves"
+    },
+    {
+      "id": 13,
+      "name": "OTHONIEL ROSA EAUX DE TOILETTE",
+      "price": 125,
+      "isBestSeller": true,
+      "image": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/o/t/othoniel-rosa_face_1439x1200px.jpg",
+      "image2": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/o/t/othoniel-rosa_34_1439x1200px.jpg",
+      "image3": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/o/t/othoniel-rosa_dos_1439x1200px.jpg",
+      "image4": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/o/t/othoniel-rosa_pack-face_1439x1200px.jpg",
+      "categoryId": 2,
+      "sizeId": 2,
+      "description": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>The queen of flowers, a symbol of power and passion evokes in this painting the fate of a woman, her love and history of France and the Louvre museum.</span></p>",
+      "content": "<p class='ql-align-center'>A peppery rose featuring the spicy and woody scent of vetiver, the limited edition fragrance also features Othoniels work.</p><p>A tribute to 'La Rose du Louvre',an original artwork created by Jean-Michel Othoniel, diptyque collaborated with the artist on an exclusive eaux de toilette honoring the queen of flowers.</p>",
+      "material": "Peppery Rose, spicy, woody scent of Vetiver"
+    },
+    {
+      "id": 15,
+      "name": "VETYVERIO EAUX DE TOILETTE ",
+      "price": 175,
+      "isBestSeller": true,
+      "image": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/v/e/vetyverio_face_vety100v1_1439x1200_1.png",
+      "image2": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/v/e/vetyverio_back_vety100v1_1439x1200_1.png",
+      "image3": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/v/e/vetyverio_three_quarter_vety100v1_1439x1200.png",
+      "image4": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/v/e/vetyverio_face_vety100v1_1439x1200_1.png",
+      "categoryId": 2,
+      "sizeId": 1,
+      "description": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>The essence of vetiver from Haiti used in the Vetyverio eaux de parfum has ESR certification (fairly traded, sustainable and responsible). It is sourced from the villages of Massey, Faucault and Bazelais, Haiti.&nbsp;</span></p>",
+      "content": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>In Vetyverio, vetiver does not become totally feminine or masculine, it goes beyond. Like inlaid wood, vetiver reveals unexpected facets: sometimes fresh, other times smoky or subtly floral. There are a kaleidoscope of olfactory nuances in this singleraw material, magnified here in an unusual interpretation.</span></p>",
+      "material": "Vetiver from Java, Vetiver from Haiti, Grapefruit, Rose"
+    },
+    {
+      "id": 8,
+      "name": "TEMPO EAUX DE PARFUM",
+      "price": 170,
+      "isBestSeller": true,
+      "image": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/t/e/tempo-fifi.jpg",
+      "image2": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/t/e/tempo_back_tempop75_1439x1200.png",
+      "image3": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/t/e/tempo_three_quarter_tempop75_1439x1200.png",
+      "image4": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/e/d/edp_coffret_tempo_1439x1200px_1.jpg",
+      "categoryId": 1,
+      "sizeId": 1,
+      "description": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>Despite its woody scent, fragrant patchouli oil is not extracted from wood, like cedar or sandalwood, but instead from the leaves of an aromatic plant in Indonesia called 'Nilam'.</span></p>",
+      "content": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>During the 60s, a certain scent was changing the world: patchouli. Tempo pays tribute to it with three extracts of this essence, a nuanced composition that hovers between elegant and woody, enveloping and earthy. Elevated by violet leaf, Tempo vibrateswith remarkable sophistication.</span></p>",
+      "material": "Patchouli, Maté, Clary sage, Violet"
+    },
+    {
+      "id": 17,
+      "name": "EAUX DE MINTHÉ EAUX DE TOILETTE",
+      "price": 200,
+      "isBestSeller": true,
+      "image": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/m/i/microsoftteams-image_14_.png",
+      "image2": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/m/i/microsoftteams-image_14_.png",
+      "image3": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/e/a/eau_de_minthe_dos.png",
+      "image4": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/e/d/edp_coffret_minthe_1439x1200px_1.jpg",
+      "categoryId": 2,
+      "sizeId": 1,
+      "description": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>At the very heart of the composition, its aromatic freshness enhances the lively floral notes of geranium while the patchouli confers profound depth.</span></p>",
+      "content": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>Inspired by a Greek myth, eaux de Minthé reinvents an emblematic perfumery accord, fougère, drawing on the scent of mint. At the very heart of the composition, its aromatic freshness enhances the lively floral notes of geranium while the patchouliconfers profound depth.</span></p>",
+      "material": "Patchouli, Geranium, Mint"
+    },
+    {
+      "id": 18,
+      "name": "BAIES / BERRIES CANDLE",
+      "price": 68,
+      "isBestSeller": true,
+      "image": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/b/a/baies_berries_scented_candle_b1_1439x1200.png",
+      "image2": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/i/m/imgaet7516.jpg",
+      "image3": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/b/a/baies_berries_scented_candle_b1_1439x1200.png",
+      "image4": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/i/m/imgaet7516.jpg",
+      "categoryId": 3,
+      "sizeId": 1,
+      "description": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>The tangy coolness of freshly picked blackcurrant berries. A few black bunches still have their leaves, their green and aromatic scent blending with the lively, flowery accents of rose.</span></p>",
+      "content": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>Berries and Roses duo: A romantic garden A wild garden where shrubs and blooming rose bushes mingle. The green, tangy accents of the freshly picked berries highlight the floral, gently spicy scent of fresh roses. A harmony of flowers and leaves ona beautiful summer’s day.</span></p>",
+      "material": "Black Bunches leaves,  flowery accents of Rose."
+    },
+    {
+      "id": 19,
+      "name": "FEU DE BOIS / WOOD FIRE CANDLE",
+      "price": 75,
+      "isBestSeller": false,
+      "image": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/f/e/feu_de_bois_bd_1.png",
+      "image2": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/i/m/imgaet7488.jpg",
+      "image3": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/f/e/feu_de_bois_bd_1.png",
+      "image4": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/i/m/imgaet7488.jpg",
+      "categoryId": 1,
+      "sizeId": 1,
+      "content": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>Wood Fire and Amber duo: A studio in winter. In the studio of Desmond Knox-Leet, one of diptyque’s three founders, a large fire burned in the hearth in winter. On his desk, a jumble of small objects, amber stones and fragrant resins joined him onhis creative journey. Their scents blended with the smoky, woody notes of the fireplace.</span></p>",
+      "description": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>Wintertime… In the hearth, a fire roars, throwing out its light and casting shadows. The wood crackles as flames slowly consume the logs, releasing their dense, smoky scent.</span></p>",
+      "material": "The wood, the logs, releasing their dense, smoky scent."
+    },
+    {
+      "id": 20,
+      "name": "2021 LIMITED EDITION BAIES CANDLE",
+      "price": 100,
+      "isBestSeller": false,
+      "image": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/f/e/feu_de_bois_bd_1.png",
+      "image2": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/i/m/imgaet7488.jpg",
+      "image3": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/f/e/feu_de_bois_bd_1.png",
+      "image4": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/i/m/imgaet7488.jpg",
+      "categoryId": 3,
+      "sizeId": 1,
+      "description": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>&nbsp;Its scent evokes the tangy brightness of freshly picked blackcurrants. Some blackcurrant bunches still have their leaves.&nbsp;</span></p>",
+      "content": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>The tangy brightness of freshly picked blackcurrants. Some blackcurrant bunches still have their leaves, their green, aromatic perfume mixing with the strong floral scent of rose. Lines of gold, black, and white decorate the box, bold yet elegantand refined. An iconic edition in a unique light.</span></p>",
+      "material": "Black Bunches leaves,  flowery accents of Rose."
+    },
+    {
+      "id": 21,
+      "name": "SANTAL/ SANDALWOOD CANDLE",
+      "price": 120,
+      "isBestSeller": true,
+      "image": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/s/a/santal_sandalwood_scented_candle_sa1_1439x1200.png",
+      "image2": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/s/a/santal.jpg",
+      "image3": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/f/i/figuier_fig_tree_scented_candle_fi1_1439x1200_1_1.png",
+      "image4": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/i/m/imgaet7503.jpg",
+      "categoryId": 4,
+      "sizeId": 1,
+      "content": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>ASandalwood and Tuberose duo: Memories of Asia. Scents of a muggy tropical jungle. The memory of a trip to Asia, with its fragrant lush flowers and tree trunks hauled by mighty elephants. The woody, velvety scent of sandalwood blends with the green,heady accents of tuberose</span></p>",
+      "description": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>Freshly cut sandalwood. Shavings and fine sawdust are laid out on the ground like a woody, fragrant, blond-hued carpet. In the sultry heat of Asia, its scent perfumes the air with a velvety, enveloping and slightly spicy fragrance.&nbsp;</span></p>",
+      "material": "woody, blond-hued Carpet, Velvety, spicy fragrance. "
+    },
+    {
+      "id": 22,
+      "name": "AMBRE / AMBER CANDLE",
+      "price": 110,
+      "isBestSeller": false,
+      "image": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/a/m/ambre_amber_scented_candle_ab_1439x1200.png",
+      "image2": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/s/a/santal.jpg",
+      "image3": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/a/m/ambre_amber_scented_candle_ab_1439x1200.png",
+      "image4": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/i/m/imgaet7503.jpg",
+      "categoryId": 4,
+      "sizeId": 1,
+      "content": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>Amber and Musks duo: The Silk Road. One of the oldest roads in the world, the Silk Road crossed Asia and North Africa on its way to Europe. The precious fabric was carried over thousands of miles along with musk, amber and balsams, perfuming the airwith their captivating notes.</span></p>",
+      "description": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 18px; background-color: rgb(255, 255, 255);'>Amber spheres discovered in an ancient treasure box. They now have the heady fragrance of balms and spices, of precious and enveloping woods.&nbsp;</span></p>",
+      "material": "Heady fragrance of balms and spices, Woods"
+    },
+    {
+      "id": 23,
+      "name": "OYÉDO EAU DE TOILETTE ",
+      "price": 112,
+      "isBestSeller": false,
+      "image": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/o/y/oyedo_face_oyedo100v1_1439x1200_1.png",
+      "image2": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/o/y/oyedo_back_oyedo100v1_1439x1200_1.png",
+      "image3": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/o/y/oyedo_three_quarter_oyedo100v1_1439x1200.png",
+      "image4": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/o/y/oyedo_face_oyedo100v1_1439x1200_1.png",
+      "categoryId": 3,
+      "sizeId": 1,
+      "content": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 15px; background-color: rgb(255, 255, 255);'>Yuzu, a name with the sharp zing of Asian citrus zest. Oyédo draws its inspiration from Japan’s ancient imperial city, Edo. At the heart of the fragrance, the citrus fruit gains all of its elegance in an accord of juicy raspberry and thyme.</span></p>",
+      "description": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 15px; background-color: rgb(255, 255, 255);'>Frambinone is a synthetic note reproducing the scent of raspberry, a plant whose odorant cannot be extracted.&nbsp;</span></p>",
+      "material": "Yuzu, Green tangerine, Thyme, Raspberry"
+    },
+    {
+      "id": 24,
+      "name": "L'EAU DE NÉROLI EAU DE TOILETTE",
+      "price": 122,
+      "isBestSeller": false,
+      "image": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/n/e/neroli_face_nero100v1_1439x1200_1.png",
+      "image2": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/n/e/neroli_back_nero100v1_1439x1200.png",
+      "image3": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/n/e/neroli_three_quarter_cnero100_1439x1200.png",
+      "image4": "https://d1wwvmedxjfrrp.cloudfront.net/catalog/product/cache/6507114ea4c487fb476f5a350c9efd46/n/e/neroli_face_nero100v1_1439x1200_1.png",
+      "categoryId": 3,
+      "sizeId": 2,
+      "content": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 15px; background-color: rgb(255, 255, 255);'>In Calabria, at the time of the neroli harvest, the air fills with its perfume. But there is also the fragrance of the bergamots growing nearby, and of pollen and green leaves. An entire orchard in a state of aromatic effervescence, like an invitationto la dolce vita. You can almost hear the soft sound of the foliage while the flowers are picked; it would be lovely to sit down under a tree, to let yourself be lulled by these scents and to slip into a slumber</span></p>",
+      "description": "<p><span style='font-family: Calluna, &quot;Times New Roman&quot;, Times, Georgia, serif; font-size: 15px; background-color: rgb(255, 255, 255);'>Neroli owes its name to the Italian princess of Nerola, who perfumed her gloves with the essence of bitter orange, bringing popularity to this sweet, floral scent.&nbsp;</span></p>",
+      "material": "Neroli, Bergamot, Orange blossom, Beeswax"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Woody"
+    },
+    {
+      "id": 2,
+      "name": "Floral"
+    },
+    {
+      "id": 3,
+      "name": "Citrus"
+    },
+    {
+      "id": 4,
+      "name": "Oriental"
+    }
+  ],
+  "sizes": [
+    {
+      "id": 1,
+      "name": "75ml"
+    },
+    {
+      "id": 2,
+      "name": "100ml"
+    }
+  ],
+  "comments": [
+    {
+      "rate": 3,
+      "content": "1234",
+      "productId": 12,
+      "id": 1
+    },
+    {
+      "rate": 3.5,
+      "content": "good",
+      "productId": 3,
+      "id": 2
+    },
+    {
+      "rate": 4,
+      "content": "Good!!",
+      "productId": 11,
+      "id": 3
+    },
+    {
+      "rate": 5,
+      "content": "Best",
+      "productId": 11,
+      "id": 4
+    }
+  ],
+  "carts": [
+    {
+      "productId": 3,
+      "quantity": 0,
+      "id": 4
+    },
+    {
+      "productId": 12,
+      "quantity": 3,
+      "id": 5
+    }
+  ]
+}
