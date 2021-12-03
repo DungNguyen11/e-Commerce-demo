@@ -7,6 +7,7 @@ const initialState = {
     loading: false,
     error: null,
   },
+  selectedCarts: [],
 }
 
 const cartReducer = createReducer(initialState, {
@@ -120,6 +121,12 @@ const cartReducer = createReducer(initialState, {
     }
   },
 
+  [REQUEST(CART_ACTION.SET_SELECTED_CARTS)]: (state, action) => {
+    return {
+      ...state,
+      selectedCarts: [...action.payload],
+    }
+  },
 })
 
 export default cartReducer;

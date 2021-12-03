@@ -10,6 +10,7 @@ import HomePage from "./pages/user/Home";
 import AllProductPage from './pages/user/AllProductList'
 import ProductDetailPage from './pages/user/ProductDetail';
 import CartPage  from './pages/user/Cart';
+import ProfilePage  from './pages/user/Profile';
 
 import { ROUTER } from "./constants/router";
 
@@ -49,10 +50,15 @@ function App() {
           path={ROUTER.USER.PRODUCT_DETAIL}
           component={ProductDetailPage}
         />
-          <DefaultLayout 
+        <DefaultLayout 
           exact
           path={ROUTER.USER.CART}
           component={CartPage}
+        />
+        <DefaultLayout 
+          exact
+          path={ROUTER.USER.CART}
+          component={ProfilePage}
         />
         <LoginAndRegisterRoute 
           exact

@@ -39,7 +39,7 @@ export const CheckboxWrapper = styled.div`
 export const ProductCard = styled.div`
   text-align: center;
   cursor: pointer;
-
+  background-color: #fff;
   img {
     max-width: 100%;
     height: 200px;

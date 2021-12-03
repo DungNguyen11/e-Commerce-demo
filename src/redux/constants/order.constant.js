@@ -1,0 +1,4 @@
+export const ORDER_ACTION = {
+  GET_ORDER_LIST: 'GET_ORDER_LIST',
+  ORDER_CART: "ORDER_CART",
+}

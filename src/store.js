@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit'
 import createSagaMiddleware from 'redux-saga';
 
-import {authReducer, productReducer, categoryReducer, commentReducer, cartReducer} from './redux/reducers';
+import {authReducer, productReducer, categoryReducer, commentReducer, cartReducer, orderReducer} from './redux/reducers';
 
 import rootSaga from './redux/sagas';
 
@@ -14,6 +14,7 @@ export const store = configureStore({
     categoryReducer,
     commentReducer,
     cartReducer,
+    orderReducer,
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware({ thunk: false}).concat(sagaMiddleware)
 })

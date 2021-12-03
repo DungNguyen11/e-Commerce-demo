@@ -400,18 +400,48 @@
       "content": "Best",
       "productId": 11,
       "id": 4
+    },
+    {
+      "rate": 4.5,
+      "content": "Its scent's so comfortable and make me feel like I'm in a natural jungle after rain..",
+      "productId": 3,
+      "id": 5
     }
   ],
   "carts": [
     {
       "productId": 3,
-      "quantity": 0,
+      "quantity": 1,
       "id": 4
     },
     {
       "productId": 12,
       "quantity": 3,
       "id": 5
+    }
+  ],
+  "orders": [
+    {
+      "fullName": "dung",
+      "email": "123",
+      "phoneNumber": "098",
+      "address": "abc abc",
+      "products": [
+        {
+          "id": 3,
+          "name": "PHILOSYKOS EAUX DE PARFUM ",
+          "price": 150,
+          "quantity": 1
+        },
+        {
+          "id": 12,
+          "name": "OLENE EAUX DE TOILETTE",
+          "price": 112,
+          "quantity": 3
+        }
+      ],
+      "totalPrice": 486,
+      "id": 1
     }
   ]
 }
