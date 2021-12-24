@@ -111,6 +111,7 @@ function App() {
           component={LoginAndRegisterPage}
         />
       </Switch>
+
     </>
   );
 }

@@ -148,7 +148,7 @@ const AddressBook = () => {
   };
 
   const renderInfoFormList = () => {
-    const userInfoFormId = userInfo.data.infoFormId;
+    const userInfoFormId = userInfo.data.infoId;
     return infoFormList.data?.map((infoFormItem, infoFormIndex) => {
       const isDefault = userInfoFormId === infoFormItem.id;
       return (

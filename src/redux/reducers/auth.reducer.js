@@ -127,10 +127,7 @@ const authReducer = createReducer(initialState, {
     return {
       ...state,
       userInfo: {        
-        data: {
-          ...state.userInfo.data, 
-          data,
-        },
+        data:  data,
         loading: false,
       },
     }
@@ -143,7 +140,7 @@ const authReducer = createReducer(initialState, {
       userInfo: {
         data: {
           ...state.userInfo.data,
-          infoFormId: data.infoFormId,
+          infoId: data.infoId,
         },
         loading: false,
       },

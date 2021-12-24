@@ -3,11 +3,12 @@
     {
       "email": "dung@gmail.com",
       "password": "$2a$10$N.RIGaJvD1NhfiazfuB4ouSXtdo4wyp64FafKP0Z60zY.fWx2YkB.",
-      "name": "Dung Nguyen ",
-      "infoId": 5,
+      "name": "Dung Nguyen",
+      "infoId": 4,
       "createdAt": 1638610890752,
-      "updatedAt": 1640253626053,
-      "id": 1
+      "updatedAt": 1640342834852,
+      "id": 1,
+      "infoFormId": 4
     },
     {
       "email": "ntdung@gmail.com",
@@ -1204,10 +1205,10 @@
     {
       "userId": 1,
       "productId": 11,
-      "quantity": 2,
+      "quantity": 1,
       "productOptionId": 21,
       "createdAt": 1640327830593,
-      "updatedAt": 1640327830593,
+      "updatedAt": 1640344225744,
       "id": 2
     }
   ],

@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 
-import { Form, Input, Button, Checkbox } from 'antd';
+import { Form, Input, Button, Checkbox, notification} from 'antd';
 import * as S from './style'
 
 import { loginAction } from '../../../redux/actions'
@@ -37,7 +37,10 @@ const LoginFormPage = ({setIsLogin}) => {
         dispatch(loginAction({
             data: values,
             callback: {
-                redirectHome: () => history.push(ROUTER.USER.HOME)
+                redirectHome: () => history.push(ROUTER.USER.HOME),
+                showSuccess: () => notification.success({
+                    description: "Login Success"
+                })
             }
         }))
     }

@@ -22,10 +22,8 @@ function* loginSaga(action) {
         data: result.data.user,
       },
     })
+    yield callback.showSuccess();
     yield callback.redirectHome();
-    yield notification({
-      message: "Login Success!"
-    })
   } catch(e) {
     yield put({
       type: FAIL(AUTH_ACTION.LOGIN),
@@ -44,7 +42,7 @@ function* registerSaga(action) {
     const { data, callback } = action.payload;
     yield axios.post("http://localhost:4000/register", data);
     yield put({ type: SUCCESS(AUTH_ACTION.REGISTER) });
-    yield notification({
+    yield notification.success({
       message: "Register Success!"
     })
     yield callback.goBackLogin();
@@ -151,13 +149,13 @@ function* changeDefaultInfoFormSaga(action) {
   try {
     const { id, data } = action.payload;
     yield axios.patch(`http://localhost:4000/users/${id}`, {
-      infoFormId: data.infoFormId,
+      infoId: data.infoFormId,
     });
     yield put({
       type: SUCCESS(AUTH_ACTION.CHANGE_DEFAULT_INFO_FORM),
       payload: {
         data: {
-          infoFormId: data.infoFormId,
+          infoId: data.infoFormId,
         }
       },
     });
