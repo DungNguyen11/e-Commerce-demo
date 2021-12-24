@@ -9,10 +9,6 @@ export const Footer = styled.div`
     background-color: #f5f5f5;
     width: 100%;
     padding: 24px;
-    
-    .footer-content {
-        margin-bottom: 12px;
-    }
 `;
 
 export const NewletterFormWrap  = styled.div`

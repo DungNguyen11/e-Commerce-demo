@@ -1,11 +1,12 @@
 import styled, { css } from "styled-components";
-
+import {Col } from 'antd';
+import Lightbox from "react-image-lightbox";
 
 export const ProductDetailContainer = styled.div`
   /* background-color: #f7f7f7; */
   max-width: 1280px;
   width: 100%;
-  margin: 16px auto 50px;
+  margin: 16px auto;
 `
 
 export const ProductDetailWrapper = styled.div`
@@ -13,20 +14,46 @@ export const ProductDetailWrapper = styled.div`
   padding: 16px;
   width: 100%;
   border-bottom: 1px solid #000;
+/* 
+  img {
+    text-align: center;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    margin-top: -1.5rem;
+  } */
 
   .space-wrapper {
     margin-top: auto;
 
     &>.ant-space {
     width: 100%;
-    }
+
+      @media only screen and (max-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      & .ant-space-item > .ant-input-number {
+        @media only screen and (max-width: 1200px) {
+        width: 200px;
+        }
+      } 
+    }   
   }
+`
+
+export const ImgCol= styled(Col)`
+  text-align: center;
+  /* padding: 12px; */
 `
 export const ProductInfo = styled.div`
   /* display: flex;
   flex-direction: column; */
   .space-wrapper {
-    margin: 50px 0 32px;
+    margin: 40px 0;
+    text-align: center;
   }
 `
 export const ProductName= styled.h2`
@@ -39,11 +66,26 @@ export const ProductType= styled.h2`
   font-size: 1.2rem;
   font-weight: 400;
 `
+export const SizeWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`
+export const ProductSize = styled.div`
+  
+  h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+`
+export const ProductSizeLabel = styled.div`
+  font-size: 1rem;
+  
+`
 export const ProductPrice= styled.div`
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   color: #7d7d7d;
-  margin: 12px 0;
-  text-align: right;
+  /* text-align: right; */
 `
 export const ProductDescription= styled.div`
   /* font-family: 'HCo Gotham' !important; */
@@ -91,6 +133,12 @@ export const ReviewWrapper = styled.div`
     top: 0;
     left: 57%;
   }
+
+  @media only screen and (max-width: 768px) {
+    &::after {
+      display: none;
+    }
+   } 
 `
 export const InfoWrapper = styled.div`
   padding: 12px;
@@ -106,6 +154,7 @@ export const Title = styled.h3`
 `
 export const InfoContent = styled.div`
   font-size: 1.4rem !important;
+  font-family: 'Times New Roman', Times, serif !important;
   text-align: center;
   padding: 0 16px;
 `
@@ -174,17 +223,10 @@ export const CommentContent = styled.h4`
   font-size: 1rem;
   font-weight: 400;
 `
-export const RelativeProduct = styled.h4`
-  margin-top: 40px;
+export const RelativeProduct = styled.div`
+  margin: 40px 0 0;
   width: 100%;
-  height: 400px;
-  /* background-color: #dedede; */
-
-  h4 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
+  background-color: #f2f2f2;
 
   /* & img {
     width: 80%;
@@ -204,26 +246,35 @@ export const RelativeProduct = styled.h4`
 //   font-size: 1rem;
 //   font-weight: 400;
 // `
-export const SlideWrapper = styled.h4`
-  margin-top: 48px;
+export const SlideWrapper = styled.div`
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 32px 0;
+
+  & .slick-initialized .slick-slide {
+    padding: 0 12px;
+  }
 `
 export const ProductCard = styled.div`
   text-align: center;
   cursor: pointer;
   position: relative;
-  padding-top: 20px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #fff;
+  transition: all 0.2s;
+  padding: 6px;
 
   img {
     max-width: 100%;
-    height: 200px;
+    height: 180px;
     object-fit: cover;
+    margin: 0 auto;
   }
 
-  /* &:hover {
-    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
-    transition: all 0.2s;
-  } */
+  &:hover {
+    /* transform: scale(1.1); */
+   box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+
+  }
 `
 export const BestSeller = styled.div`
   position: absolute;
@@ -232,12 +283,12 @@ export const BestSeller = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
+  width: 80px;
   height: 26px;
   border-radius: 5px;
   background-color: #f5f5f5;
   color: #3e4854;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   padding: 6px 11px;
 `
@@ -249,7 +300,7 @@ export const ProductRelativeName = styled.div`
   letter-spacing: 1px;
   text-transform: uppercase;
   padding: 10px 0;
-  height: 60px;
+  height: 80px;
 `
 export const ProductRelativePrice = styled.div`
   color: #767676;
@@ -257,3 +308,41 @@ export const ProductRelativePrice = styled.div`
   font-style: italic;
   padding-bottom: 8px;
 `
+
+export const ImgLightBox= styled.div`
+    @media only screen and (max-width: 376px) {
+    display: none;
+  }
+`
+export const SkeletonImage = styled.div`
+  height: 100%;
+  & .ant-skeleton-element {
+    width: 100%;
+    height: 100%;
+  }
+  & .ant-skeleton-image {
+    width: 100%;
+    height: 100%;
+  }
+`
+export const ImageWrapper = styled.div`
+  /* position: relative;
+  width: 100%;
+  padding-top: 75%;
+  overflow: hidden; */
+`
+export const ImageContent = styled.img`
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  transition: all 0.3s; */
+  width: 100%;
+  height: auto;
+  margin-top: -1.5rem;
+`;

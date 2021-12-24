@@ -1,9 +1,20 @@
-import { configureStore } from '@reduxjs/toolkit'
-import createSagaMiddleware from 'redux-saga';
+import { configureStore } from "@reduxjs/toolkit";
+import createSagaMiddleware from "redux-saga";
 
-import {authReducer, productReducer, categoryReducer, commentReducer, cartReducer, orderReducer} from './redux/reducers';
+import {
+  authReducer,
+  productReducer,
+  categoryReducer,
+  commentReducer,
+  cartReducer,
+  orderReducer,
+  discountReducer,
+  infoFormReducer,
+  favoriteReducer,
+  commonReducer,
+} from "./redux/reducers";
 
-import rootSaga from './redux/sagas';
+import rootSaga from "./redux/sagas";
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -15,8 +26,13 @@ export const store = configureStore({
     commentReducer,
     cartReducer,
     orderReducer,
+    discountReducer,
+    infoFormReducer,
+    favoriteReducer,
+    commonReducer,
   },
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware({ thunk: false}).concat(sagaMiddleware)
-})
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({ thunk: false }).concat(sagaMiddleware),
+});
 
 sagaMiddleware.run(rootSaga);

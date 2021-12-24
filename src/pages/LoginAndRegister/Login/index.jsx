@@ -1,11 +1,45 @@
-import React from 'react'
+import React, {useEffect} from 'react';
+import { useDispatch, useSelector } from "react-redux";
+import { useHistory } from "react-router-dom";
+
 import { Form, Input, Button, Checkbox } from 'antd';
 import * as S from './style'
 
+import { loginAction } from '../../../redux/actions'
+import { ROUTER } from "../../../constants/router";
+
+
 const LoginFormPage = ({setIsLogin}) => {
 
+    const history = useHistory();
+    const dispatch = useDispatch();
+
+    const [loginForm] = Form.useForm();
+
+    const { responseAction } = useSelector(state => state.authReducer)
+
+    useEffect(() => {
+        if(responseAction.login.error && !responseAction.login.loading) {
+            loginForm.setFields([
+                {
+                name: 'email',
+                errors: [" "],
+                },
+                {
+                name: 'password',
+                errors: [responseAction.login.error],
+                },
+            ]);
+        }
+    }, [responseAction.login])
+
     const handleLogin = (values) => {
-        console.log(values)
+        dispatch(loginAction({
+            data: values,
+            callback: {
+                redirectHome: () => history.push(ROUTER.USER.HOME)
+            }
+        }))
     }
 
     return (
@@ -13,6 +47,7 @@ const LoginFormPage = ({setIsLogin}) => {
         <S.LoginTitle>
         <h3>SIGN IN</h3>
         <Form
+            form={loginForm}
             name="login"
             layout='vertical'
             labelCol={{ span: 8,}}

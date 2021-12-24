@@ -7,6 +7,8 @@ const initialState = {
     loading: false,
     error: null,
   },
+  orderInfo: {},
+  currentOrder: {},
 }
 
 const orderReducer = createReducer(initialState, {
@@ -43,6 +45,20 @@ const orderReducer = createReducer(initialState, {
     }
   },
 
+  [REQUEST(ORDER_ACTION.SET_ORDER_INFO)]: (state, action) => {
+    return {
+      ...state,
+      orderInfo: action.payload,
+    }
+  },
+
+  [REQUEST(ORDER_ACTION.ORDER_CART)]: (state, action) => {
+    const { data } = action.payload;
+    return {
+      ...state,
+      currentOrder: data,
+    }
+  },
 })
 
 export default orderReducer;

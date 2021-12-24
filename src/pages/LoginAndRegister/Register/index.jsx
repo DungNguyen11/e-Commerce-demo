@@ -20,6 +20,7 @@ const RegisterPage = ({setIsLogin}) => {
                 name: values.name,
                 email: values.email,
                 password: values.password,
+                phone: "",
             },
             callback: {
                 goBackLogin: () => setIsLogin(true)
@@ -29,10 +30,6 @@ const RegisterPage = ({setIsLogin}) => {
 
     useEffect(() => {
         if (responseAction.register?.error) {
-        //   setError("email", {
-        //     type: "manual",
-        //     message: responseAction.register.error,
-        //   });
           registerForm.setFields([
             {
               name: 'email',

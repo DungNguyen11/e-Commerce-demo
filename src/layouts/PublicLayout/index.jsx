@@ -6,7 +6,7 @@ import Footer from "../Footer";
 
 import * as S from './styles'
 
-const DefaultLayout = ({component: Component, ...props}) => {
+const PublicLayout = ({component: Component, ...props}) => {
   return (
     <Route
       {...props} 
@@ -24,4 +24,4 @@ const DefaultLayout = ({component: Component, ...props}) => {
   )
 }
 
-export default DefaultLayout
+export default PublicLayout

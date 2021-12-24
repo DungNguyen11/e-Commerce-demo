@@ -6,6 +6,10 @@ import categorySaga from './category.saga';
 import commentSaga from './comment.saga';
 import cartSaga from './cart.saga';
 import orderSaga from './order.saga';
+import discountSaga from './discount.saga';
+import infoFormSaga from './infoForm.saga';
+import favoriteSaga from './favorite.saga';
+import commonSaga from './common.saga';
 
 export default function* rootSaga() {
   yield fork(authSaga);
@@ -14,4 +18,9 @@ export default function* rootSaga() {
   yield fork(commentSaga)
   yield fork(cartSaga)
   yield fork(orderSaga)
+  yield fork(discountSaga)
+  yield fork(infoFormSaga)
+  yield fork(favoriteSaga)
+  yield fork(commonSaga)
+
 }

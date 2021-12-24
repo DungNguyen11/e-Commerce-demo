@@ -20,7 +20,11 @@ export const TitleWrapper = styled.div`
     right: 10px;
     top: 50%;
   }
-  `
+
+  @media only screen and (max-width: 376px) {
+    width: 100%;
+  }
+`
 export const Title = styled.span`
   position: relative;
   font-size: 2rem; 

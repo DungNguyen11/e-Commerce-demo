@@ -1,5 +1,11 @@
 import { createReducer } from "@reduxjs/toolkit";
-import { PRODUCT_ACTION, REQUEST, SUCCESS, FAIL } from "../constants";
+import {
+  PRODUCT_ACTION,
+  FAVORITE_ACTION,
+  REQUEST,
+  SUCCESS,
+  FAIL,
+} from "../constants";
 
 const initialState = {
   productList: {
@@ -12,8 +18,8 @@ const initialState = {
     data: {},
     loading: false,
     error: null,
-  }, 
-}
+  },
+};
 
 const productReducer = createReducer(initialState, {
   [REQUEST(PRODUCT_ACTION.GET_PRODUCT_LIST)]: (state, action) => {
@@ -22,12 +28,12 @@ const productReducer = createReducer(initialState, {
       productList: {
         ...state.productList,
         loading: true,
-      }
-    }
+      },
+    };
   },
   [SUCCESS(PRODUCT_ACTION.GET_PRODUCT_LIST)]: (state, action) => {
     const { data, meta, more } = action.payload;
-    if(more) {
+    if (more) {
       return {
         ...state,
         productList: {
@@ -36,8 +42,8 @@ const productReducer = createReducer(initialState, {
           meta,
           loading: false,
           error: null,
-        }
-      }
+        },
+      };
     }
     return {
       ...state,
@@ -47,8 +53,8 @@ const productReducer = createReducer(initialState, {
         meta,
         loading: false,
         error: null,
-      }
-    }
+      },
+    };
   },
   [FAIL(PRODUCT_ACTION.GET_PRODUCT_LIST)]: (state, action) => {
     const { error } = action.payload;
@@ -58,8 +64,8 @@ const productReducer = createReducer(initialState, {
         ...state.productList,
         loading: false,
         error,
-      }
-    }
+      },
+    };
   },
 
   [REQUEST(PRODUCT_ACTION.GET_PRODUCT_DETAIL)]: (state, action) => {
@@ -68,8 +74,8 @@ const productReducer = createReducer(initialState, {
       productDetail: {
         ...state.productDetail,
         loading: true,
-      }
-    }
+      },
+    };
   },
   [SUCCESS(PRODUCT_ACTION.GET_PRODUCT_DETAIL)]: (state, action) => {
     const { data } = action.payload;
@@ -80,8 +86,8 @@ const productReducer = createReducer(initialState, {
         data: data,
         loading: false,
         error: null,
-      }
-    }
+      },
+    };
   },
   [FAIL(PRODUCT_ACTION.GET_PRODUCT_DETAIL)]: (state, action) => {
     const { error } = action.payload;
@@ -91,10 +97,33 @@ const productReducer = createReducer(initialState, {
         ...state.productDetail,
         loading: false,
         error,
-      }
-    }
+      },
+    };
   },
 
-})
+  [SUCCESS(FAVORITE_ACTION.REMOVE_FAVORITE)]: (state, action) => {
+    const { data } = action.payload;
+    const newFavorites = [...state.productDetail.data.favorites];
+    // Tim index cua favorite vua delete trong array favorites cua productDetail.data.favorites
+    const favoriteIndex = newFavorites.findIndex(
+      (favoriteItem) => favoriteItem.id === data.id
+    );
+    console.log(favoriteIndex);
+    newFavorites.splice(favoriteIndex, 1);
+    console.log(newFavorites);
+    return {
+      ...state,
+      productDetail: {
+        ...state.productDetail,
+        data: {
+          ...state.productDetail.data,
+          favorites: [...newFavorites],
+        },
+        loading: false,
+        error: null,
+      },
+    };
+  },
+});
 
 export default productReducer;

@@ -21,7 +21,11 @@ export const TitleWrapper = styled.div`
     right: 10px;
     top: 50%;
   }
-  `
+
+  @media only screen and (max-width: 376px) {
+    width: 100%;
+  }
+`
 export const Title = styled.span`
   position: relative;
   font-size: 2rem; 
@@ -34,7 +38,7 @@ export const Title = styled.span`
 `
 
 export const ProductWrapper = styled.div`
-  margin: 12px auto;
+  margin: 12px auto 0;
   padding: 12px 0;
 
   @media only screen and (min-width: 1200px) {
@@ -94,7 +98,6 @@ export const ProductPrice = styled.div`
 
 export const Button = styled.div`
   text-align: center;
-  margin-top: 24px;
   cursor: pointer;
   color: #757575;
   font-size: 1.1rem;

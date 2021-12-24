@@ -9,6 +9,9 @@ function* getCommentListSaga(action) {
     const result = yield axios.get(`http://localhost:4000/comments`, {
       params: {
         productId,
+        _expand: "user",
+        _order: "desc",
+        _sort: "id",
       }
     });
     yield put({

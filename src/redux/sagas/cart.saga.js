@@ -7,9 +7,10 @@ import { notification } from "antd";
 
 function* getCartListSaga(action) {
   try {
-    const result = yield axios.get(`http://localhost:4000/carts`, {
+    const { userId } = action.payload;
+    const result = yield axios.get(`http://localhost:4000/carts?_expand=product&_expand=productOption`, {
       params: {
-        _expand: "product",
+        userId,
       }
     });
     yield put({
@@ -26,8 +27,14 @@ function* getCartListSaga(action) {
 
 function* addToCartSaga(action) {
   try {
-    const { productId } = action.payload
+    const { userId } = action.payload
     const result = yield axios.post(`http://localhost:4000/carts`, action.payload);
+    yield put({
+      type: REQUEST(CART_ACTION.GET_CART_LIST),
+      payload: {
+        userId,
+      }
+    })
     yield put({
       type: SUCCESS(CART_ACTION.ADD_TO_CART),
       payload: {
@@ -36,14 +43,7 @@ function* addToCartSaga(action) {
     })
     yield notification.success({
       message: "Added to Bag"
-    })
-    yield put({
-      type: REQUEST(CART_ACTION.GET_CART_LIST),
-      payload: {
-        productId
-      }
-    })
-  
+    }) 
   } catch(e) {
     yield put({ type: FAIL(CART_ACTION.ADD_TO_CART), payload: { error: 'Error' } })
   }
@@ -80,7 +80,7 @@ function* removeCartProductSaga(action) {
       }
     })
   } catch(e) {
-    yield put({ type: FAIL(CART_ACTION.UPDATE_CART_PRODUCT), payload: { error: 'Error' } })
+    yield put({ type: FAIL(CART_ACTION.REMOVE_CART_PRODUCT), payload: { error: 'Error' } })
   }
 }
 

@@ -7,7 +7,6 @@ import { generatePath, useHistory } from 'react-router';
 
 import { getProductListAction } from '../../../../redux/actions';
 
-import { PAGE_SIZE } from "../../../../constants/pagination";
 import { ROUTER } from '../../../../constants/router';
 
 const BestSeller = () => {
@@ -33,7 +32,11 @@ const BestSeller = () => {
           md={{ span: 6 }} 
           lg={{ span: 6 }}
         >
-          <S.ProductCard >
+          <S.ProductCard 
+            onClick={() => history.push(
+              generatePath(ROUTER.USER.PRODUCT_DETAIL, { id: bestSellerItem.id})
+            )}
+          >
             {(bestSellerItem.isBestSeller) && <S.BestSeller>Best Seller</S.BestSeller>}
             <img src={bestSellerItem.image} alt="" />
             <S.ProductName>{bestSellerItem.name}</S.ProductName>
@@ -50,7 +53,7 @@ const BestSeller = () => {
         </S.Title>
       </S.TitleWrapper>
       <S.ProductWrapper>
-        <Row gutter={[16, 16]} style={{marginBottom : 32}} >
+        <Row gutter={[24, 16]} style={{marginBottom : 32}} >
           {renderBestSeller()}
         </Row>  
       </S.ProductWrapper>

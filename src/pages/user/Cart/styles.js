@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import TopWrapperImg from '../../../assets/images/top_wrapper_img.png'
+
+import EmptyCartImg from "../../../assets/images/empty_cart.png";
+
 
 export const CartContainer = styled.div`
   /* background: radial-gradient(#fdfdfb, #e8e8e8); */
@@ -11,5 +13,9 @@ export const CartContainer = styled.div`
   @media only screen and (min-width: 1280px) {
     max-width: 1280px;
   }
+`
+
+export const EmptyCartContainer = styled.div`
+  background: url(${EmptyCartImg});
 `
 

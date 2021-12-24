@@ -111,12 +111,44 @@ const authReducer = createReducer(initialState, {
     }
   },
 
-  [AUTH_ACTION.LOGOUT]: (state, action) => {
+  [REQUEST(AUTH_ACTION.LOGOUT)]: (state, action) => {
     return {
       ...state,
-      userInfo: {},
+      userInfo: {
+        data: {},
+        loading: false,
+      },
     }
-  }
+  },
+
+  [SUCCESS(AUTH_ACTION.CHANGE_DETAIL)]: (state, action) => {
+    const { data } = action.payload;
+    console.log(data)
+    return {
+      ...state,
+      userInfo: {        
+        data: {
+          ...state.userInfo.data, 
+          data,
+        },
+        loading: false,
+      },
+    }
+  },
+
+  [SUCCESS(AUTH_ACTION.CHANGE_DEFAULT_INFO_FORM)]: (state, action) => {
+    const { data } = action.payload;
+    return {
+      ...state,
+      userInfo: {
+        data: {
+          ...state.userInfo.data,
+          infoFormId: data.infoFormId,
+        },
+        loading: false,
+      },
+    }
+  },
  
 })
 

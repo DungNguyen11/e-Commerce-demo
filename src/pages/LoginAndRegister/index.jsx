@@ -9,7 +9,7 @@ import RegisterPage from './Register'
 
 const LoginAndRegisterPage = () => {
 
-    const [isLogin, setIsLogin] = useState(false);
+    const [isLogin, setIsLogin] = useState(true);
 
     return (
         <S.LoginContainer>

@@ -1,5 +1,5 @@
 import { createReducer } from "@reduxjs/toolkit";
-import { CART_ACTION, REQUEST, SUCCESS, FAIL } from "../constants";
+import { CART_ACTION, ORDER_ACTION, AUTH_ACTION, REQUEST, SUCCESS, FAIL } from "../constants";
 
 const initialState = {
   cartList: {
@@ -85,7 +85,6 @@ const cartReducer = createReducer(initialState, {
     const cartIndex = newCartList.findIndex(
       (cartItem) => cartItem.id === data.id 
     );
-    console.log(cartIndex)
     newCartList.splice(cartIndex, 1, {
       ...state.cartList.data[cartIndex],
       quantity: data.quantity,
@@ -127,6 +126,50 @@ const cartReducer = createReducer(initialState, {
       selectedCarts: [...action.payload],
     }
   },
+
+  [REQUEST(CART_ACTION.UPDATE_SELECTED_CARTS)]: (state, action) => {
+    const { data } = action.payload;
+    const newSelectedCartList = [...state.selectedCarts];
+    const selectedCartIndex = newSelectedCartList.findIndex(
+      (selectedCartItem) => selectedCartItem.id === data.id 
+    );
+    newSelectedCartList.splice(selectedCartIndex, 1, {
+      ...state.selectedCarts[selectedCartIndex],
+      quantity: data.quantity,
+    })
+    return {
+      ...state,
+      selectedCarts: newSelectedCartList
+    }
+  },
+
+  [SUCCESS(ORDER_ACTION.ORDER_CART)]: (state, action) => {
+    const { cartIds } = action.payload;
+    const newCartList = state.cartList.data.filter(
+      (cartItem) => !cartIds.includes(cartItem.id) 
+      )
+    return {
+      ...state,
+      cartList: {
+        ...state.cartList,
+        data: newCartList,
+      },
+      selectedCarts: [],
+    }
+  },
+
+  [REQUEST(AUTH_ACTION.LOGOUT)]: (state, action) => {
+    return {
+      ...state,
+      userInfo: {},
+      cartList: {
+        data: [],
+        loading: false,
+        error: null,
+      },
+      selectedCarts: [],
+    }
+  }
 })
 
 export default cartReducer;

@@ -15,6 +15,7 @@ export const HeaderWrap = styled.div`
 
 export const HeaderContainer = styled.div`
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: space-between;
     height: 80px;
@@ -45,6 +46,13 @@ export const HeaderLogo = styled.div`
         height: 75px;
         object-fit: cover;
     }
+
+    @media screen and (max-width: 920px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } 
 `;
 
 export const HeaderNav = styled.ul`

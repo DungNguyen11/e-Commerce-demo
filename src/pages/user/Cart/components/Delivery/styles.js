@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Image } from "antd";
 
 export const PageContent = styled.div`
   /* display: flex;
@@ -12,9 +13,22 @@ export const OrderInfo = styled.div`
 export const Bag = styled.div`
   padding: 12px 0;
   margin: 0 24px;
+`
+export const BagTitle = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+
   & h3 {
-    /* padding: 12px 24px 0; */
+    margin-bottom: 0;
   }
+  & span {
+    color: #8c8c8c;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
 `
 export const CartList = styled.div`
   display: flex;
@@ -29,15 +43,11 @@ export const ProductInfo = styled.div`
   justify-content: space-between;
   flex-grow: 1;
 `
-export const ProductImg = styled.div`
-  width: 170px;
-  height: 160px;
-  
-  img {
-    width: auto;
-    height: 100%;
-    object-fit: cover;
-  }
+export const Img = styled(Image)`
+  max-width: 100%;
+  height: 90px;
+  width: 100px;
+  object-fit: cover;
 `
 export const ProductDetail = styled.div`
  display: flex;
@@ -76,7 +86,7 @@ export const ProductOrder = styled.div`
     margin-top: 8px;
   }
 `
-export const Subtotal = styled.div`
+export const SummaryItem = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
@@ -86,16 +96,28 @@ export const Subtotal = styled.div`
     font-weight: 500;
   }
 `
-export const Shipping = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding-left: 12px;
+// export const Shipping = styled.div`
+//   display: flex;
+//   justify-content: space-between;
+//   padding-left: 12px;
+//   margin-bottom: 10px;
 
-  span {
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
-`
+//   span {
+//     font-size: 1.2rem;
+//     font-weight: 500;
+//   }
+// `
+// export const Discount = styled.div`
+//   display: flex;
+//   justify-content: space-between;
+//   margin-bottom: 10px;
+//   padding-left: 12px;
+
+//   span {
+//     font-size: 1.2rem;
+//     font-weight: 500;
+//   }
+// `
 export const Total = styled.div`
   /* display: flex; */
   font-size: 1.6rem;
@@ -134,4 +156,63 @@ export const CheckOutBtn = styled.div`
   } */
 `
 
+export const InfoFormWrapper = styled.div`
+  margin-bottom: 16px;
+`
 
+export const InfoFormItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 4px;
+  cursor: pointer;
+`
+
+export const InfoHead = styled.h4`
+  display: flex;
+  justify-content: space-between;
+`
+export const Button = styled.h4`
+    color: #ff7875;
+    cursor: pointer;
+    font-size: 0.9rem;
+
+    &:hover {
+      color: #ff4d4f;
+    }
+`
+export const InfoName = styled.div`
+  /* font-size: 1rem;
+  text-transform: uppercase; */
+  /* margin-bottom: 8px; */
+  display: flex;
+  align-items: center;
+  
+  & h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+`
+export const InfoItem = styled.div`
+  display: inline-flex;
+  span {
+    color: #919191;
+  }
+
+  h4 {
+    margin-left: 8px;
+  }
+`
+export const Default = styled.div`
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  
+  & span {
+    margin-left: 8px;
+    font-weight: 400;
+  }
+`

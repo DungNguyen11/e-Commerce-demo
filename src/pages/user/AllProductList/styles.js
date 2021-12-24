@@ -40,6 +40,9 @@ export const ProductCard = styled.div`
   text-align: center;
   cursor: pointer;
   background-color: #fff;
+  position: relative;
+  transition: all 0.2s;
+
   img {
     max-width: 100%;
     height: 200px;
@@ -48,9 +51,26 @@ export const ProductCard = styled.div`
 
   &:hover {
     box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
-    transition: all 0.2s;
   }
 `
+export const ImageWrapper = styled.div`
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+`
+export const ImageContent = styled.img`
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  transition: all 0.3s;
+`;
 
 export const BestSeller = styled.div`
   position: absolute;
@@ -59,7 +79,7 @@ export const BestSeller = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
+  width: 90px;
   height: 26px;
   border-radius: 5px;
   background-color: #f5f5f5;

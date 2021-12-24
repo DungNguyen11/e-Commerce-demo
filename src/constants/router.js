@@ -10,7 +10,7 @@ export const ROUTER = {
     PRODUCT_DETAIL: '/product/:id',
   },
   ABOUT_US: '/about',
-  CUSTOMER_CARE: 'customer_care',
+  CUSTOMER_CARE: '/customer_care',
   LOGIN_REGISTER: '/loginandregister',
   NOT_FOUND: '/not-found',
 }

@@ -5,4 +5,7 @@ export * from '../actions/user.action'
 export * from '../actions/comment.action'
 export * from '../actions/cart.action'
 export * from '../actions/order.action'
-
+export * from '../actions/discount.action'
+export * from '../actions/infoForm.action'
+export * from '../actions/favorite.action'
+export * from '../actions/common.action'

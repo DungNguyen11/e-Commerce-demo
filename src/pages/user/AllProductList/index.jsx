@@ -4,7 +4,7 @@ import { generatePath, useHistory } from 'react-router';
 
 import TopWrapper from "../../../components/TopWrapper";
 
-import {Row, Col, Collapse, Checkbox, Slider, Input, Select, Space, Tag} from 'antd';
+import {Row, Col, Collapse, Checkbox, Slider, Input, Select, Space, Tag, Skeleton} from 'antd';
 import * as S from './styles';
 
 import { PAGE_SIZE } from "../../../constants/pagination";
@@ -17,7 +17,6 @@ import { ROUTER } from '../../../constants/router';
 const AllProductPage = () => {
 
   const [categoryFilter, setCategoryFilter] = useState([]);
-  console.log(categoryFilter)
   const [keywordFilter, setKeywordFilter] = useState("");
   const [priceFilter, setPriceFilter] = useState(DEFAULT_PRICE_FILTER);
   const [sortFilter, setSortFilter] = useState("");
@@ -42,10 +41,11 @@ const AllProductPage = () => {
       priceFilter,
       keyword: e.target.value,
       sortFilter,
+      categoryFilter, 
     }))
   }
 
-  const handleClearKeyword = (e) => {
+  const handleClearKeyword = () => {
     setKeywordFilter('');
     dispatch(getProductListAction({
       limit: PAGE_SIZE.USER_PRODUCT, 
@@ -53,6 +53,7 @@ const AllProductPage = () => {
       priceFilter,
       keyword: "",
       sortFilter,
+      categoryFilter,
     }))
   }
 
@@ -98,10 +99,11 @@ const AllProductPage = () => {
       priceFilter: value,
       keyword: keywordFilter,
       sortFilter,
+      categoryFilter,
     }))
   }
 
-  const handleClearPriceFilter = (value) => {
+  const handleClearPriceFilter = () => {
     setPriceFilter(DEFAULT_PRICE_FILTER);
     dispatch(getProductListAction({
       limit: PAGE_SIZE.USER_PRODUCT, 
@@ -109,6 +111,7 @@ const AllProductPage = () => {
       priceFilter: DEFAULT_PRICE_FILTER,
       keyword: keywordFilter,
       sortFilter,
+      categoryFilter,
     }))
   }
 
@@ -120,6 +123,7 @@ const AllProductPage = () => {
       priceFilter,
       keyword: keywordFilter,
       sortFilter: value,
+      categoryFilter,
     }))
   }
 
@@ -131,6 +135,7 @@ const AllProductPage = () => {
       priceFilter: value,
       keyword: keywordFilter,
       sortFilter: "",
+      categoryFilter,
     }))
   }
 
@@ -143,6 +148,7 @@ const AllProductPage = () => {
         priceFilter,
         keyword: keywordFilter,
         sortFilter,
+        categoryFilter,
       })
     )
   }
@@ -182,6 +188,7 @@ const AllProductPage = () => {
   const renderProductList = useMemo(() => {
     return productList.data.map((productItem, productIndex) => (
       <Col 
+        key={productIndex}
         xs={{ span: 12 }} 
         sm={{ span: 8 }} 
         md={{ span: 8 }} 
@@ -194,6 +201,9 @@ const AllProductPage = () => {
         >
           {(productItem.isBestSeller) && <S.BestSeller>Best Seller</S.BestSeller>}
           <img src={productItem.image} alt="" />
+          {/* <S.ImageWrapper>
+            <S.ImageContent src={productItem.image} alt='image'/>
+          </S.ImageWrapper> */}
           <S.ProductName>{productItem.name}</S.ProductName>
           <S.ProductPrice>{`$${productItem.price}`}</S.ProductPrice>
         </S.ProductCard>
@@ -209,8 +219,13 @@ const AllProductPage = () => {
           <h2>ALL PRODUCTS</h2>
         </S.PageTitle>
         <Row gutter={24}>
-          <Col span={6}>
+          <Col 
+            xs={{ span: 24 }}
+            sm={{ span: 24 }}
+            md={{ span: 24 }}
+            lg={{ span: 6 }}>
             <Collapse 
+              style={{marginBottom: "16px"}}
               // ghost
               bordered={false} 
               expandIconPosition='right'
@@ -241,19 +256,33 @@ const AllProductPage = () => {
                   onChange={(value) => handleChangePriceFilter(value)}
                 />
               </Collapse.Panel>
-            </Collapse> 
-      
+            </Collapse>     
           </Col>
-          <Col span={18}>
+          <Col
+            xs={{ span: 24 }}
+            sm={{ span: 24 }}
+            md={{ span: 24 }}
+            lg={{ span: 18 }}
+          >
             <Row gutter={16}>
-            <Col span={18}>
+            <Col 
+               xs={{ span: 16 }}
+               sm={{ span: 16 }}
+               md={{ span: 16 }}
+               lg={{ span: 18 }}
+            >
               <Input
                 placeholder="Search"
                 value={keywordFilter}
                 onChange={(e) => handleSearchKeyword(e)}
               />
               </Col>
-              <Col span={6}>
+              <Col 
+                xs={{ span: 8 }}
+                sm={{ span: 8 }}
+                md={{ span: 8 }}
+                lg={{ span: 6 }}
+              >
                 <Select
                   style={{ width: "100%" }}
                   placeholder="Sort By"
@@ -284,9 +313,13 @@ const AllProductPage = () => {
               </Tag>
               ))}
             </Space>
-            <Row gutter={[16, 24]} style={{marginTop: 30}}>
-                {renderProductList}
-            </Row>
+            {productList.loading ? (
+                <Skeleton active />
+              ) : (
+                <Row gutter={[16, 24]} style={{marginTop: 30}}>
+                  {renderProductList}
+                </Row>
+              )}            
             {productList.meta.total !== productList.data.length && (
               <Row justify='center'>
                 <S.Button>

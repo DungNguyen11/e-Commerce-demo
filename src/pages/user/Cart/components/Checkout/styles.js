@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Image } from "antd";
 
 export const PageContent = styled.div`
   /* display: flex;
@@ -13,6 +14,12 @@ export const CartList = styled.div`
   border-bottom: 1px solid rgba(0,0,0,0.1);
   /* justify-content: space-between; */
 `
+export const Img = styled(Image)`
+  max-width: 100%;
+  height: 90px;
+  width: 100px;
+  object-fit: cover;
+`
 export const Checkbox = styled.div`
   display: flex;
   flex-direction: column;
@@ -26,21 +33,6 @@ export const ProductInfo = styled.div`
   justify-content: space-between;
   flex-grow: 1;
 `
-export const ProductImg = styled.div`
-  width: 170px;
-  height: 160px;
-  
-  img {
-    width: auto;
-    height: 100%;
-    object-fit: cover;
-  }
-`
-export const ProductDetail = styled.div`
- display: flex;
- flex-direction: column;
- justify-content: space-around;
-`
 export const ProductHead = styled.div`
  display: flex;
  justify-content: space-between;
@@ -49,26 +41,39 @@ export const ProductName = styled.h4`
  text-transform: uppercase;
  font-size: 1.1rem;
  font-weight: 500;
+
+ @media only screen and (max-width: 376px) {
+    font-size: 0.9rem;
+  }
 `
 export const ProductSize = styled.div`
   color: #919191;
   font-size: 1rem;
+  @media only screen and (max-width: 376px) {
+    font-size: 0.8rem;
+  }
 `
 export const ProductPrice = styled.div`
   font-size: 1.1rem;
   font-weight: 500;
+
+  @media only screen and (max-width: 376px) {
+    font-size: 0.9rem;
+  }
 `
 export const ProductBottom = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-top: 14px;
 `
 export const QuantityInput = styled.div`
   
 `
 export const ProductOrder = styled.div`
-  margin: 0 20px;
   padding: 24px;
   box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+  position: sticky;
+  top: 100px;
 `
 export const Subtotal = styled.div`
   display: flex;
@@ -82,6 +87,17 @@ export const Subtotal = styled.div`
 export const Shipping = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
+
+  span {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+`
+export const Discount = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 
   span {
     font-size: 1.2rem;
@@ -118,6 +134,26 @@ export const Promo = styled.div`
     background-color: #262626;
   }
 `
+export const DiscountCard = styled.div`
+  display: inline-flex;
+  width: 100%;
+  padding: 6px 8px;
+  margin-bottom: 12px;
+  font-size: 0.8rem;
+  border: 1px solid #c7c7c7;
+  border-radius: 6px;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    margin: 0;
+  }
+`
+export const DiscountValue = styled.div`
+  font-weight: 500;
+  
+`
+
 export const Total = styled.div`
   /* display: flex; */
   font-size: 1.6rem;

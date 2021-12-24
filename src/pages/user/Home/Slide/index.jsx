@@ -34,23 +34,24 @@ const Slide = () => {
   };
 
   return (
-    <S.SlideContainer>
-      <Slider {...settings}>
-        <div>
-          <img src={img1} alt="" />       
-        </div>
-         <div>
-          <img src={img2} alt="" />
-        </div>
-        <div>
-          <img src={img3} alt="" />
-        </div>
-        <div>
-          <img src={img4} alt="" />
-        </div>
-      </Slider>
-    </S.SlideContainer>
-
+    <div>
+      <S.SlideContainer>
+        <Slider {...settings}>
+          <div>
+            <img src={img1} alt="" />       
+          </div>
+          <div>
+            <img src={img2} alt="" />
+          </div>
+          <div>
+            <img src={img3} alt="" />
+          </div>
+          <div>
+            <img src={img4} alt="" />
+          </div>
+        </Slider>
+        </S.SlideContainer>
+    </div>
   )
 }
 
